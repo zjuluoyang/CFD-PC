@@ -241,7 +241,8 @@ void Foam::MicrolayerBoilingVelocityFvPatchVectorField::updateCoeffs()
 
 		if ((MicrolayerThickness[celli] == 0) && (alpha1p[celli] < 0.01))
 		{		
-			//ASR - radial distance from bubble center [Utaka 2013]		
+			//ASR - radial distance from bubble center [Utaka 2013]	
+			// this equation is suitable for single bubble with centre (0 0 0). need update
 			MicrolayerThickness[celli] = mag(Cfcs()[celli])*4.46E-3;
 
 			//multibubble approx radially-independent initial thickness
