@@ -21,6 +21,7 @@ License
     You should have received a copy of the GNU General Public License
     along with OpenFOAM.  If not, see <http://www.gnu.org/licenses/>.
 
+速度边界条件，计算了微液膜蒸发引起的气泡内部气相速度源项，但是没有考虑微液膜蒸发引起的相变源项变化。
 \*---------------------------------------------------------------------------*/
 
 #include "MicrolayerBoilingVelocityFvPatchVectorField.H"
